@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addProduct</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="icon/logotipeWebsyte.png" alt="website logotype">
+            <span>ogotype of web</span>
+       </div>
+       <ul>
+           <li class="border"><a href="#">Home</a></li>
+           <li class="border"><a href="#">About Us</a></li>
+           <li class="border"><a href="#">Shop</a></li>
+           <li class="border"><a href="#">Help</a></li>
+           <li class="unborder"><a href="addProduct.html" class="colorItemNav">New Product</a></li>
+       </ul>
+   </nav>
+<main>
+    <section class="content addProduct">
+        <section class="sectionLeft2">
+            <h1 class="title">New Product</h1>
+
+            <form action="#" method="POST">
+                <div class="box">
+                    <label for="product">Product</label>
+                    
+                    <input class="formInput" type="text" id="name" name="product_name" placeholder=" Mochila Preta">
+                    <span  id="nameError" class="wthioutError">este campo é obrigatorio</span>
+                </div>
+
+                <div class="box">
+                    <label for="price">Price</label>
+                    <span id="priceError" class="wthioutError">este campo é obrigatorio</span>
+                    <input class="formInput" type="number" name="product_price" placeholder=" R$ 900,00">
+                </div>
+                <div class="box">
+                    <label for="descrition">Description</label>
+                    <span id="descriptionError" class="wthioutError">este campo é obrigatorio</span>
+                    <textarea id="msg" name="product_description" placeholder=" Descrition..."></textarea>
+                </div>
+            </form>
+        </section>
+       
+        <section class="imageright">
+            <h2 class="title">Product Picture</h2>
+
+            <img  id="myImage" class="imageReference" src="image/image-reference.png" alt="Product Image">
+            <input id="img" name="img" class="buttonImage" type="file">
+            <label for="img">Select Image</label>
+        </section>
+    </section>
+   
+    <div class="nextStep">
+        <input class="botonNext" type='submit' value='Add Product' onclick="selectproduct()" >
+        <input class="botonNext botonCancel" type='submit' value='Cancel'>
+    </div>
+</main>
+<footer>
+    <ul>
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>SHOP</li>
+        <li>HELP</li>
+    </ul>
+    <p> &copy;company Name</p>
+</footer>
+
+</body>
+</html>

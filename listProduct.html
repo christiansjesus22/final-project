@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ListProduct</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="newscripts.js"></script>
+</head>
+
+<body onload="stringProduct()">
+
+    <nav>
+         <div class="logo">
+             <img src="icon/logotipeWebsyte.png" alt="website logotype">
+             <span>ogotype of web</span>
+        </div>
+        <ul>
+            <li class="border"><a href="#">Home</a></li>
+            <li class="border"><a href="#">About Us</a></li>
+            <li class="border"><a href="#">Shop</a></li>
+            <li class="border"><a href="#">Help</a></li>
+            <li class="unborder"><a href="addProduct.html" class="colorItemNav">New Product</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="progress">
+            <ol>
+                <li class="lineProgress">Shoping Cart</li>
+                <li>Shipping Details</li>
+                <li>Payment Options</li>
+            </ol>
+            <div></div>
+        </section>
+
+        <section class="content">
+
+            <section class="sectionLeft">
+                <h1 class="title">Shopping Cart</h1>
+                <ul id="listItem">
+                    <li>
+                        <div class="item">
+                            <img src="image/image-reference.png" alt="Photo item">
+                            <div class="aboutItem">
+                                <h4>Product Name</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere assumenda iure
+                                </p>
+                                <span>300$</span>
+                            </div>
+                        </div>
+                        <input type="number" name="ItemQuantity" placeholder=" 1pcs">
+                    </li>
+
+                    <li>
+                        <div class="item">
+                            <img src="image/image-reference.png" alt="Photo item">
+                            <div class="aboutItem">
+                                <h4>Product Name</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis cum eveniet modi
+                                    praesentium nam omnis! Provident eum molestiae debitis quisquam! Earum.</p>
+                                <span>300$</span>
+                            </div>
+                        </div>
+                        <input type="number" name="ItemQuantity" placeholder=" 1pcs">
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sumary sectionRight">
+                <h3 class="title">Sumary</h3>
+                <div class="boxcupon"><a href="#" class="cupon">ENTER CUPPON CODE</a></div>
+                <ul>
+                    <li class="contagem">
+                        <span>SUBTOTAL</span>
+                        <div id="subtotal"></div>
+                    </li>
+                    <li class="contagem" >
+                        <span>SHIPPING</span>
+                        <div class="free">FREE</div>
+                    </li>
+                    <li class="contagem">
+                        <span>TAXES</span>
+                        <div id="taxes" ></div>
+                    </li>
+                </ul>
+                <div class="total">
+                    <h3>TOTAL</h3>
+                    <div class="textTotal" id="total"></div>
+                </div>
+            </section>
+        </section>
+        <div class="nextStep">
+            <input class="botonNext" type='submit' value='Next'>
+            <input class="botonCancel botonNext" type='submit' value='Cancel'>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>SHOP</li>
+            <li>HELP</li>
+        </ul>
+        <p> &copy;company Name</p>
+    </footer>
+</body>
+
+</html>

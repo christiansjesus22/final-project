@@ -1,0 +1,387 @@
+body {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  color: rgb(43, 42, 40);
+  font-size: 15px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 3px solid rgb(43, 42, 40);
+}
+
+nav .iconeburger{
+  display: none;
+}
+
+nav .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo img {
+  width: 80px;
+}
+nav .logo span{
+  font-size: 17px;
+  font-weight: 900;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(43, 42, 40);
+  font-weight: 700;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+nav ul li a:hover{
+  color: rgb(254, 254, 254);
+}
+nav ul .border {
+  border-right: 2px solid  rgb(43, 42, 40);
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+nav ul .border:hover{ 
+  border-right:solid 2px rgb(43, 42, 40) ;
+  background-color: rgb(43, 42, 40);
+}
+nav ul .unborder{
+  border-right: none;
+  padding: 5px 10px;
+}
+
+nav ul li .colorItemNav {
+  background-color: rgb(43, 42, 40);
+  color: white;
+}
+nav ul .colorItemNav:hover{
+  background-color: rgba(43, 42, 40, 0.8);
+}
+
+.progress {
+  background-color: rgba(89, 71, 71, 0.8);
+  margin-bottom: 30px;
+  padding: 50px 40px;
+}
+
+.progress div{
+  margin-top: -3px;
+}
+
+.progress div::before {
+  display: flex;
+  content: "";
+  max-width: 28%;
+  height: 3px;
+  background-color:rgb(76,175,80);  
+  animation: animate 4s alternate
+}
+
+@keyframes animate{
+  
+  from {
+    max-width: 0%;
+  }
+
+  to {   
+  max-width: 28%;
+  }
+}
+.progress ol {
+  display: flex;
+  justify-content: space-around;
+  list-style: decimal;
+  list-style-position: inside;
+  border-bottom: solid 3px rgba(244, 244, 244, 0.7);
+}
+.progress ol li {
+  font-size: 25px;
+  padding-bottom: 30px;
+  color: white; 
+}
+.progress ol .lineProgress{
+  margin-bottom: -3px;
+}
+/* items  y sections que se repiten en las 2 paginas llamados por clases*/
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 10px 40px;
+}
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: solid 3px rgb(76,175,80);
+}
+
+/*  final total elementos repetido*/
+
+.sectionLeft {
+  width: 60%;
+  padding-bottom: 30px;
+  border-bottom: solid 3px rgb(76,175,80);
+}
+.sectionLeft li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sectionLeft .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionLeft .aboutItem {
+  display: block;
+  margin: 5px;
+}
+.sectionLeft img {
+  max-width: 50px;
+  border: solid 1px rgb(89, 71, 71);
+  border-radius:2px;
+}
+.sectionLeft h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.sectionLeft  li input {
+  width: 60px;
+  padding: 5px;
+}
+.sectionLeft li input::-webkit-inner-spin-button,
+.sectionLeft li input::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.sectionRight {
+  width: 30%;
+}
+.sectionRight .boxcupon {
+  margin: 20px 0px;
+  border-bottom: solid 3px rgba(89, 71, 71, 0.2);
+  padding-bottom: 20px;
+}
+.sectionRight div .cupon{
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  color: rgb(89, 71, 71);
+  padding: 5px ;
+}
+.sectionRight .boxcupon .cupon:hover{
+  color: rgb(254, 254, 254);
+  background-size: 10px; 
+  background: url(icon/backgroundCuppon.png);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  animation:hover 0.4s;
+}
+
+@keyframes hover{
+  
+  0% {
+    background-size: 100% 0%;
+    color: rgb(43, 42, 40);
+  }
+
+  85% {   
+    background-size: 100% 100%;
+    color: rgba(254, 254, 254, 0.938);
+
+  }
+
+  100%{
+    background-size: 100% 98%;
+    color: rgb(254, 254, 254);
+  }
+}
+
+.sectionRight ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sectionRight ul li {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionRight ul li div{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sectionRight .total {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 3px rgb(76,175,80);
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.sectionRight .total .textTotal{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.nextStep {
+  margin-bottom: 100px;
+  padding: 10px 40px;
+}
+.nextStep .botonNext {
+  color: white;
+  background-color:  rgb(43, 42, 40);
+  width: 150px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.nextStep .botonCancel {
+  background-color: rgba(43, 42, 40, 0.8);
+}
+footer {
+  background-color:  rgb(43, 42, 40);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+footer ul li {
+  color: white;
+  margin: 10px;
+  align-items: center;
+}
+footer p {
+  color: white;
+}
+/* pagina de add product */
+.addProduct {
+  margin-top: 60px;
+}
+.sectionLeft2 {
+  width: 70%;
+  max-width: 900px;
+}
+.formleft form {
+  width: 100%;
+}
+form .box {
+  margin-bottom: 30px;
+}
+form label {
+  width: 20%;
+  font-weight: 400;
+}
+form .formInput {
+  width: 80%;
+  float: right;
+}
+form textarea {
+  width: 80%;
+  height: 305px;
+  max-height: 315px;
+  float: right;
+}
+.imageright {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.imageright .imageReference {
+  max-width: 100%;
+  border: solid 3px rgb(89, 71, 71);
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+.imageright input {
+  display: none;
+}
+.imageright label{
+  display: flex;
+  background-color: rgb(89, 71, 71);
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 10px 30px;
+  background-color:rgb(76,175,80); 
+  color: white; 
+  font-size: 16px;
+  justify-content: center;
+}
+/* validacion de formilario */
+
+.error{
+  border:  solid 3px rgb(231, 187, 44);
+  border-radius: 3px;
+}
+
+.wthioutError{
+  display: none;
+}
+
+.withError{
+  display: flex;
+  float: right;
+  color: rgb(231, 187, 44);
+  font-weight: 900;
+}
+/* alerta de agragar producto */
+.alert{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  background-color: rgb(254, 254, 254);
+  padding: 10px 40px;
+  border-radius: 3px;
+}
+
+.alert h5{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.alert p {
+  margin-bottom: 50px;
+  text-align: center;
+  color: rgba(244, 244, 244, 0.7);
+}
+
+.alert div { 
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.alert div button{
+  margin: 5px;
+  border-radius: 3px;
+  background-color: grey;
+  padding: 10px 30px;
+  background-color:rgb(76,175,80); 
+  color: white; 
+  font-size: 16px;
+  border-style: none;
+}
